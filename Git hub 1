@@ -1,0 +1,16 @@
+git init
+git branch -M main
+git remote add origin <your-github-repo-url>
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+
+
+
+
+cd /Users/evafridman/Documents/GitHub/tristanhelpme
+git status
+git add .
+git commit -m "Update website pages and styling"
+git push
+
