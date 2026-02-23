@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Golos+Text:wght@400;600;700&display=swap");
+
+:root {
+  --bg: #ecf8f8;
+  --surface: #f8ffff;
+  --ink: #1f2d35;
+  --navy: #102a43;
+  --navy-strong: #0b1f33;
+  --muted: #556b79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Golos Text", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.site-header {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: color-mix(in srgb, var(--bg) 90%, white 10%);
+  border-bottom: 1px solid #d9ecec;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-button {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid #b8d7de;
+  background: linear-gradient(145deg, #ffffff, #effcfc);
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-button:hover,
+.home-button:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(16, 42, 67, 0.15);
+}
+
+.home-logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.pyramid {
+  display: grid;
+  gap: 3px;
+  justify-items: center;
+}
+
+.pyramid-row {
+  display: flex;
+  gap: 3px;
+}
+
+.block {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--navy);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.nav-button {
+  border: 0;
+  background: var(--navy);
+  color: #fff;
+  padding: 0.58rem 1rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s ease;
+}
+
+.nav-button:hover,
+.nav-button:focus-visible,
+.dropdown:hover > .nav-button,
+.dropdown:focus-within > .nav-button {
+  background: var(--navy-strong);
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.45rem);
+  min-width: 220px;
+  background: var(--surface);
+  border: 1px solid #d9ecec;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(16, 42, 67, 0.16);
+  padding: 0.35rem;
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  text-decoration: none;
+  color: var(--ink);
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus-visible {
+  background: #e8f6f8;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.landing-page .main {
+  max-width: none;
+  margin: 0;
+}
+
+.main h1,
+.main h2,
+.main h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  letter-spacing: 0.01em;
+}
+
+.main p {
+  font-family: "Golos Text", "Segoe UI", sans-serif;
+}
+
+.landing-hero {
+  text-align: center;
+  padding: clamp(4rem, 12vw, 8rem) 1.2rem 0;
+}
+
+.landing-page .landing-hero {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.landing-hero h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 5.4vw, 3.6rem);
+}
+
+.stem-highlight {
+  color: #fe585a;
+}
+
+.landing-hero p {
+  margin: 1rem auto 0;
+  max-width: 780px;
+  color: var(--muted);
+  font-size: clamp(1rem, 2.2vw, 1.28rem);
+}
+
+.feature-band {
+  margin-top: clamp(14rem, 45vh, 24rem);
+  background: var(--navy);
+  color: #f8fbff;
+  padding: clamp(3rem, 7vw, 5rem) 1.2rem;
+  min-height: 100vh;
+}
+
+.feature-band h2 {
+  max-width: 1100px;
+  margin: 0 auto 1.5rem;
+  font-size: clamp(2rem, 4.3vw, 3rem);
+  text-align: center;
+}
+
+.features-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.feature-card {
+  text-align: center;
+}
+
+.feature-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.26);
+  background: linear-gradient(145deg, #f1f7ff 0%, #d8e7fb 48%, #bdd4f5 100%);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+  margin: 0.85rem 0 0.4rem;
+  font-size: 1.85rem;
+}
+
+.feature-card p {
+  margin: 0;
+  color: #d6e3f3;
+  line-height: 1.5;
+}
+
+.image-band {
+  min-height: 100vh;
+  padding: clamp(2rem, 5vw, 3.5rem) 1.2rem 2rem;
+  background-image: linear-gradient(rgba(10, 20, 32, 0.38), rgba(10, 20, 32, 0.38)),
+    url("images/children-learning.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image-band-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.image-band-item {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.58);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.28);
+}
+
+.about-page .main {
+  max-width: 980px;
+  margin: 3rem auto 2rem;
+  padding: 0 1.2rem;
+}
+
+.about-title {
+  margin: 0 0 1.5rem;
+  text-align: center;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+}
+
+.team-dropdown {
+  background: var(--surface);
+  border: 1px solid #d9ecec;
+  border-radius: 14px;
+  padding: 0.75rem 1rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.team-dropdown summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(1.7rem, 3.6vw, 2.2rem);
+  color: var(--navy);
+  text-align: center;
+}
+
+.team-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.team-dropdown summary::after {
+  content: " +";
+  color: var(--muted);
+}
+
+.team-dropdown[open] summary::after {
+  content: " -";
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 0.95rem;
+}
+
+.directors-grid {
+  grid-template-columns: minmax(0, 320px);
+  justify-content: center;
+}
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #d5e8ef;
+  background: #f0f8fb;
+}
+
+.profile-name {
+  margin: 0.65rem 0 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+@media (max-width: 840px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-band-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  .nav-button {
+    padding: 0.52rem 0.82rem;
+    font-size: 0.9rem;
+  }
+}

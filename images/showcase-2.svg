@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Student coding on laptop">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5fbff"/>
+      <stop offset="100%" stop-color="#d7ebff"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <rect x="110" y="140" width="380" height="230" rx="20" fill="#b7d4f2"/>
+  <rect x="140" y="175" width="150" height="12" rx="6" fill="#84a9cf"/>
+  <rect x="140" y="205" width="240" height="12" rx="6" fill="#84a9cf"/>
+  <rect x="140" y="235" width="180" height="12" rx="6" fill="#84a9cf"/>
+  <rect x="170" y="390" width="260" height="95" rx="14" fill="#9cc0e2"/>
+  <rect x="145" y="485" width="310" height="24" rx="12" fill="#85afd6"/>
+  <circle cx="300" cy="75" r="45" fill="#c6ddf5"/>
+</svg>

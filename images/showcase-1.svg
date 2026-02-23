@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Students working on whiteboard">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6fbff"/>
+      <stop offset="100%" stop-color="#dbeeff"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <rect x="80" y="90" width="440" height="250" rx="16" fill="#c8def4"/>
+  <rect x="120" y="140" width="190" height="12" rx="6" fill="#8caed0"/>
+  <rect x="120" y="175" width="300" height="12" rx="6" fill="#8caed0"/>
+  <rect x="120" y="210" width="250" height="12" rx="6" fill="#8caed0"/>
+  <circle cx="210" cy="425" r="70" fill="#adc8e5"/>
+  <circle cx="390" cy="425" r="70" fill="#9fbedf"/>
+  <rect x="145" y="495" width="130" height="50" rx="16" fill="#90b3d8"/>
+  <rect x="325" y="495" width="130" height="50" rx="16" fill="#84abcf"/>
+</svg>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="landing-page">
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="home-button" href="index.html" aria-label="Go to landing page">
+          <img class="home-logo" src="images/logo.png" alt="Home logo" />
+        </a>
+
+        <div class="nav-right">
+          <div class="dropdown">
+            <button class="nav-button" type="button" aria-haspopup="true">Courses</button>
+            <div class="dropdown-menu" role="menu" aria-label="Courses menu">
+              <a class="dropdown-item" href="applied-math.html">Applied Math</a>
+              <a class="dropdown-item" href="natural-sciences.html">Natural Sciences</a>
+              <a class="dropdown-item" href="computer-science.html">Computer Science</a>
+            </div>
+          </div>
+          <a class="nav-button" href="about.html">About us</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="landing-hero">
+        <h1>sy<span class="stem-highlight">STEM</span> playground</h1>
+        <p>
+          A teaching nonprofit aimed at applicability, the theory of learning, and changing the way students think
+          about STEM.
+        </p>
+      </section>
+
+      <section class="feature-band" aria-label="Highlights">
+        <h2>What makes us different</h2>
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-image" role="img" aria-label="Illustration for Applicability"></div>
+            <h3>Applicability</h3>
+            <p>
+              You know why you are learning the topics we teach you. Each course is selected to not only be
+              interesting but to serve each student a purpose in an out of the classroom.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-image" role="img" aria-label="Illustration for Unique Courses"></div>
+            <h3>Unique Courses</h3>
+            <p>
+              Each subject we teach is not typically taught to our target age group. But we think these topics are
+              introduced too late to have a meaningful impact for students, so we introduce them early.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-image" role="img" aria-label="Illustration for Challenging content"></div>
+            <h3>Challenging content</h3>
+            <p>
+              We teach students to use STEM as a playground: you first climb the ladder before you go down the slide:
+              learning is fun because of the work you put into it, not despite it.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="image-band" aria-label="Gallery">
+        <div class="image-band-grid">
+          <img class="image-band-item" src="images/showcase-1.svg" alt="STEM learning scene one" />
+          <img class="image-band-item" src="images/showcase-2.svg" alt="STEM learning scene two" />
+          <img class="image-band-item" src="images/showcase-3.svg" alt="STEM learning scene three" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

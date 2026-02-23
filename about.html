@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="about-page">
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="home-button" href="index.html" aria-label="Go to landing page">
+          <img class="home-logo" src="images/logo.png" alt="Home logo" />
+        </a>
+        <div class="nav-right">
+          <div class="dropdown">
+            <button class="nav-button" type="button" aria-haspopup="true">Courses</button>
+            <div class="dropdown-menu" role="menu" aria-label="Courses menu">
+              <a class="dropdown-item" href="applied-math.html">Applied Math</a>
+              <a class="dropdown-item" href="natural-sciences.html">Natural Sciences</a>
+              <a class="dropdown-item" href="computer-science.html">Computer Science</a>
+            </div>
+          </div>
+          <a class="nav-button" href="about.html">About us</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1 class="about-title">About us</h1>
+
+      <details class="team-dropdown">
+        <summary>Founders</summary>
+        <div class="team-grid">
+          <article class="profile-card">
+            <img class="profile-image" src="images/eva-fridman.jpg" alt="Portrait of Eva Fridman" />
+            <p class="profile-name">Eva Fridman</p>
+          </article>
+          <article class="profile-card">
+            <img class="profile-image" src="images/catherine-wang.svg" alt="Portrait of Catherine Wang" />
+            <p class="profile-name">Catherine Wang</p>
+          </article>
+        </div>
+      </details>
+
+      <details class="team-dropdown">
+        <summary>Directors</summary>
+        <div class="team-grid directors-grid">
+          <article class="profile-card">
+            <img class="profile-image" src="images/chloe-jiang.svg" alt="Portrait of Chloe Jiang" />
+            <p class="profile-name">Chloe Jiang</p>
+          </article>
+        </div>
+      </details>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Chloe Jiang portrait placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef8ff"/>
+      <stop offset="100%" stop-color="#d3e4f8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <circle cx="300" cy="232" r="103" fill="#aec6e3"/>
+  <path d="M118 540c18-110 88-184 182-184s164 74 182 184" fill="#9db8da"/>
+  <text x="300" y="565" text-anchor="middle" font-family="Golos Text, sans-serif" font-size="34" fill="#102a43">Chloe Jiang</text>
+</svg>
