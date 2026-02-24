@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Chemistry illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f2faff"/>
+      <stop offset="100%" stop-color="#d9ecff"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <rect x="85" y="460" width="430" height="66" rx="14" fill="#abcceb"/>
+  <path d="M185 460 L245 260 L335 260 L395 460 Z" fill="#8fb6dd"/>
+  <rect x="248" y="190" width="84" height="70" rx="12" fill="#6f9ac8"/>
+  <circle cx="275" cy="345" r="16" fill="#e4f2ff"/>
+  <circle cx="315" cy="382" r="12" fill="#e4f2ff"/>
+  <circle cx="350" cy="332" r="10" fill="#e4f2ff"/>
+</svg>

@@ -6,7 +6,7 @@
     <title>Applied Math</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="course-page">
     <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
         <a class="home-button" href="index.html" aria-label="Go to landing page">
@@ -27,8 +27,31 @@
     </header>
 
     <main class="main">
-      <h1>Applied Math</h1>
-      <p>Explore modeling, optimization, and mathematical techniques used to solve real-world problems.</p>
+      <h1 class="course-page-title">Applied Math</h1>
+
+      <section class="course-list" aria-label="Applied Math courses">
+        <article class="course-row">
+          <img class="course-image" src="images/course-probability.svg" alt="Probability course image" />
+          <div class="course-copy">
+            <h2>Probability</h2>
+            <p>
+              Learn how random events are modeled, how uncertainty is measured, and how probability supports
+              prediction in real situations.
+            </p>
+          </div>
+        </article>
+
+        <article class="course-row">
+          <img class="course-image" src="images/course-statistics.svg" alt="Statistics course image" />
+          <div class="course-copy">
+            <h2>Statistics</h2>
+            <p>
+              Build skills in reading and interpreting data, testing claims, and making stronger decisions using
+              statistical reasoning.
+            </p>
+          </div>
+        </article>
+      </section>
     </main>
   </body>
 </html>
