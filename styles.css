@@ -175,7 +175,7 @@ body {
 
 .landing-hero {
   text-align: center;
-  padding: clamp(4rem, 12vw, 8rem) 1.2rem 0;
+  padding: clamp(4rem, 12vw, 8rem) 1.2rem 4rem;
 }
 
 .landing-page .landing-hero {
@@ -195,12 +195,12 @@ body {
 .landing-hero p {
   margin: 1rem auto 0;
   max-width: 780px;
-  color: var(--muted);
+  color: #415562;
   font-size: clamp(1rem, 2.2vw, 1.28rem);
 }
 
 .feature-band {
-  margin-top: clamp(14rem, 45vh, 24rem);
+  margin-top: 0;
   color: #f8fbff;
   padding: clamp(3.5rem, 8vw, 6rem) 1.2rem;
   min-height: 100vh;
@@ -297,30 +297,52 @@ body {
 }
 
 .about-page .main {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-page-title {
   max-width: 980px;
-  margin: 3rem auto 2rem;
-  padding: 0 1.2rem 2rem;
+  margin: 3rem auto 1.5rem;
+  padding: 0 1.2rem;
+  text-align: center;
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  color: var(--navy);
 }
 
 .about-intro {
-  background: var(--navy);
+  background-image: url("images/Howsystemrunsband.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #f8fbff;
-  padding: 2.4rem 1.6rem;
-  border-radius: 18px;
-  text-align: center;
-  box-shadow: 0 18px 36px rgba(6, 18, 30, 0.24);
-  margin-bottom: 2rem;
+  padding: clamp(3rem, 7vw, 5.5rem) 0;
 }
+
+.about-intro-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 980px;
+  margin: 3rem auto 2rem;
+  padding: 0 1.2rem;
+}
+
 
 .about-title {
   margin: 0 0 1.2rem;
   text-align: center;
-  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
 }
 
 .about-copy {
   max-width: 860px;
-  margin: 0 auto 0;
+  margin: 0 auto;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.7;
   font-size: clamp(1rem, 2.2vw, 1.15rem);
@@ -339,7 +361,7 @@ body {
   list-style: none;
   cursor: pointer;
   font-weight: 400;
-  font-size: clamp(1.7rem, 3.6vw, 2.2rem);
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
   color: var(--navy);
   text-align: center;
 }
@@ -349,12 +371,21 @@ body {
 }
 
 .team-dropdown summary::after {
-  content: " +";
-  color: var(--muted);
+  content: "";
+  display: inline-block;
+  width: 0.55em;
+  height: 0.55em;
+  margin-left: 0.4rem;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none' stroke='%23556b79' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M1 1l5 5 5-5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.55em 0.55em;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
 }
 
 .team-dropdown[open] summary::after {
-  content: " -";
+  transform: rotate(180deg);
 }
 
 .team-grid {
@@ -516,7 +547,7 @@ body {
   text-align: center;
   color: var(--navy);
   font-weight: 400;
-  font-size: clamp(1rem, 2.4vw, 1.3rem);
+  font-size: clamp(0.95rem, 2.1vw, 1.2rem);
 }
 
 .contact-band p {
@@ -531,4 +562,46 @@ body {
 .contact-email {
   font-weight: 400;
   color: #2f6fe5;
+}
+
+
+.about-mission {
+  max-width: 880px;
+  margin: 0 auto 3rem;
+  padding: 0 1.2rem;
+  text-align: center;
+  color: #415562;
+  font-size: clamp(0.98rem, 2.1vw, 1.12rem);
+  line-height: 1.6;
+}
+
+.title-navy {
+  color: var(--navy);
+}
+
+.mission-highlight {
+  font-weight: 600;
+}
+
+.mission-highlight--red {
+  color: #e75260;
+}
+
+.mission-highlight--teal {
+  color: #4cc9a4;
+}
+
+.mission-highlight--blue {
+  color: #5485e5;
+}
+
+
+
+.hero-band {
+  background-color: var(--bg);
+  background-image: url("images/Homepersonband.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: clamp(14rem, 45vh, 24rem);
 }
