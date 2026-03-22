@@ -550,12 +550,33 @@ body {
 }
 
 .contact-band {
-  background: var(--bg);
+  position: relative;
+  background: #ffffff;
   padding: 2.5rem 1.2rem;
   text-align: center;
   color: var(--navy);
   font-weight: 400;
   font-size: clamp(0.95rem, 2.1vw, 1.2rem);
+}
+
+.contact-instagram {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-instagram img {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.contact-instagram:hover,
+.contact-instagram:focus-visible {
+  transform: translateY(-1px);
 }
 
 .contact-band p {
