@@ -552,11 +552,10 @@ body {
 }
 
 .faq-heading-band {
-  width: 100%;
+  width: 100vw;
   background: #e75260;
   padding: 1rem 1.2rem;
-  margin: 0 0 1.4rem;
-  box-shadow: 0 18px 30px rgba(231, 82, 96, 0.18);
+  margin: 0 calc(50% - 50vw) 1.4rem;
 }
 
 .faq-band h2 {
