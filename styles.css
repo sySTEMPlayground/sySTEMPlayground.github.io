@@ -552,11 +552,10 @@ body {
 }
 
 .faq-heading-band {
-  background: #fe8e7c;
-  border-radius: 24px;
+  width: 100%;
+  background: #e75260;
   padding: 1rem 1.2rem;
-  margin: 0 auto 1.4rem;
-  max-width: 320px;
+  margin: 0 0 1.4rem;
   box-shadow: 0 18px 30px rgba(231, 82, 96, 0.18);
 }
 
@@ -565,6 +564,7 @@ body {
   text-align: center;
   color: #ffffff;
   font-size: clamp(2rem, 4.3vw, 3rem);
+  letter-spacing: 0.04em;
 }
 
 .faq-list {
