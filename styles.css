@@ -542,7 +542,8 @@ body {
 }
 
 .faq-band {
-  background-image: url("images/q&abackgr.png");
+  background-color: #e9f8f8;
+  background-image: linear-gradient(rgba(233, 248, 248, 0.3), rgba(233, 248, 248, 0.3)), url("images/q%26abackgr.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -557,7 +558,7 @@ body {
 .faq-band h2 {
   margin: 0 0 1.4rem;
   text-align: center;
-  color: var(--navy);
+  color: #102a43 !important;
   font-size: clamp(2rem, 4.3vw, 3rem);
   letter-spacing: 0.04em;
 }
@@ -568,7 +569,7 @@ body {
 }
 
 .faq-item {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid #d9ecec;
   border-radius: 18px;
   box-shadow: 0 10px 18px rgba(16, 42, 67, 0.05);
