@@ -304,7 +304,7 @@ body {
 
 .about-page-title {
   max-width: 980px;
-  margin: 3rem auto 1.5rem;
+  margin: 3rem auto 2.5rem;
   padding: 0 1.2rem;
   text-align: center;
   font-size: clamp(2.6rem, 6vw, 4.2rem);
@@ -317,6 +317,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   color: #f8fbff;
+  margin-top: 2.5rem;
   padding: clamp(3rem, 7vw, 5.5rem) 0;
 }
 
@@ -661,7 +662,7 @@ body {
 
 .about-mission {
   max-width: 880px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 0;
   padding: 0 1.2rem;
   text-align: center;
   color: #415562;
