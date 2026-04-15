@@ -119,14 +119,8 @@ body {
 }
 
 .nav-button--join:hover,
-.nav-button--join:focus-visible,
-.dropdown:hover > .nav-button--join,
-.dropdown:focus-within > .nav-button--join {
+.nav-button--join:focus-visible {
   background: #d84354;
-}
-
-.dropdown-menu--join {
-  min-width: 170px;
 }
 
 .join-page {
