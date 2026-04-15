@@ -119,8 +119,9 @@ body {
 }
 
 .nav-button--join:hover,
-.nav-button--join:focus-visible {
-  background: #d84354;
+.nav-button--join:focus-visible,
+.nav-button--join:active {
+  background: #e75260;
 }
 
 .join-page {
