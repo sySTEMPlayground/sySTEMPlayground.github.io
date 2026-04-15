@@ -140,10 +140,10 @@ body {
   text-decoration: underline;
 }
 
-.nav-button:not(.nav-button--donate):hover,
-.nav-button:not(.nav-button--donate):focus-visible,
-.dropdown:hover > .nav-button:not(.nav-button--donate),
-.dropdown:focus-within > .nav-button:not(.nav-button--donate) {
+.nav-button:not(.nav-button--donate):not(.nav-button--join):hover,
+.nav-button:not(.nav-button--donate):not(.nav-button--join):focus-visible,
+.dropdown:hover > .nav-button:not(.nav-button--donate):not(.nav-button--join),
+.dropdown:focus-within > .nav-button:not(.nav-button--donate):not(.nav-button--join) {
   background: var(--navy-strong);
 }
 
