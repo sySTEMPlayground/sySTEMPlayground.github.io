@@ -113,6 +113,38 @@ body {
   background: #39b794;
 }
 
+.nav-button--join {
+  background: #e75260;
+  color: #ffffff;
+}
+
+.nav-button--join:hover,
+.nav-button--join:focus-visible,
+.dropdown:hover > .nav-button--join,
+.dropdown:focus-within > .nav-button--join {
+  background: #d84354;
+}
+
+.dropdown-menu--join {
+  min-width: 170px;
+}
+
+.join-page {
+  text-align: center;
+  padding: 4rem 1.2rem 2rem;
+}
+
+.join-link {
+  color: #2f6fe5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.join-link:hover,
+.join-link:focus-visible {
+  text-decoration: underline;
+}
+
 .nav-button:not(.nav-button--donate):hover,
 .nav-button:not(.nav-button--donate):focus-visible,
 .dropdown:hover > .nav-button:not(.nav-button--donate),
