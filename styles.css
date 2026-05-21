@@ -498,10 +498,15 @@ body {
   font-size: clamp(1.6rem, 3.6vw, 2.2rem);
 }
 
+.course-copy {
+  min-width: 0;
+}
+
 .course-copy p {
   margin: 0;
   color: var(--muted);
   line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .course-semester {
@@ -531,6 +536,18 @@ body {
 }
 
 .enroll-button {
+  background: #5485e5;
+}
+
+.applied-math-page .enroll-button {
+  background: #5485e5;
+}
+
+.natural-sciences-page .enroll-button {
+  background: #e75260;
+}
+
+.computer-science-page .enroll-button {
   background: #4cc9a4;
 }
 
@@ -540,6 +557,21 @@ body {
 
 .enroll-button:hover,
 .enroll-button:focus-visible {
+  background: #39b794;
+}
+
+.applied-math-page .enroll-button:hover,
+.applied-math-page .enroll-button:focus-visible {
+  background: #3f70d0;
+}
+
+.natural-sciences-page .enroll-button:hover,
+.natural-sciences-page .enroll-button:focus-visible {
+  background: #d94251;
+}
+
+.computer-science-page .enroll-button:hover,
+.computer-science-page .enroll-button:focus-visible {
   background: #39b794;
 }
 
