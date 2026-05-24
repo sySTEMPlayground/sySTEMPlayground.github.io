@@ -11,9 +11,9 @@
         align-items: flex-start;
         gap: 30px;
         margin-bottom: 40px;
-        padding: 30px;
-        background-color: #f9f9f9;
-        border-radius: 12px;
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
       }
 
       .course-icon {
@@ -26,6 +26,7 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        margin-left: -20px;
       }
 
       .course-icon img {
@@ -36,57 +37,73 @@
 
       .course-info {
         flex: 1;
+        padding-top: 0;
       }
 
       .course-name-header {
-        font-size: 32px;
-        font-weight: 700;
-        color: #001f3f;
-        margin-bottom: 10px;
+        display: none;
       }
 
       .teacher-label {
         font-size: 16px;
         color: #666;
         margin-bottom: 20px;
+        margin-top: -10px;
       }
 
       .details-section {
         display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
+        gap: 15px;
+        flex-wrap: nowrap;
+        align-items: center;
       }
 
       .detail-oval {
         background-color: white;
-        border: 2px solid #001f3f;
+        border: none;
         color: #001f3f;
-        padding: 15px 25px;
+        padding: 8px 20px;
         border-radius: 50px;
         font-weight: 600;
         font-size: 14px;
         text-align: center;
-        min-width: 180px;
-        flex: 1;
-        min-height: 50px;
+        white-space: nowrap;
         display: flex;
         align-items: center;
         justify-content: center;
+        height: auto;
+        min-width: auto;
+        flex: 0 1 auto;
+      }
+
+      .course-detail-image {
+        display: none;
+      }
+
+      .course-detail-copy {
+        display: none;
+      }
+
+      .course-detail-actions {
+        margin-top: 20px;
       }
 
       @media (max-width: 768px) {
         .course-header {
           flex-direction: column;
-          align-items: center;
-          text-align: center;
+          align-items: flex-start;
         }
 
-        .course-name-header {
-          font-size: 24px;
+        .course-icon {
+          margin-left: 0;
+        }
+
+        .details-section {
+          flex-wrap: wrap;
         }
 
         .detail-oval {
-          min-width: 150px;
+          white-space: normal;
         }
       }
     </style>
@@ -116,6 +133,7 @@
     <main class="main">
       <article class="course-detail">
         <h1 class="course-page-title">Probability</h1>
+        <p class="teacher-label">Teacher: <strong>Eva Fridman</strong></p>
         
         <!-- Learn More Section -->
         <div class="course-header">
@@ -123,9 +141,6 @@
             <img src="images/course-probability.jpeg" alt="Probability course icon" />
           </div>
           <div class="course-info">
-            <h2 class="course-name-header">Probability</h2>
-            <p class="teacher-label">Teacher: <strong>Eva Fridman</strong></p>
-            
             <div class="details-section">
               <div class="detail-oval">Days met: 2</div>
               <div class="detail-oval">Time met: Coming soon!</div>
@@ -134,11 +149,6 @@
           </div>
         </div>
 
-        <img class="course-detail-image" src="images/course-probability.jpeg" alt="Probability course image" />
-        <p class="course-detail-copy">
-          Probability helps students understand randomness, risk, prediction, and decision-making. This course connects
-          core probability ideas to real situations so students can reason about uncertainty with confidence.
-        </p>
         <div class="course-actions course-detail-actions">
           <a
             class="enroll-button"
