@@ -5,6 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Probability</title>
     <link rel="stylesheet" href="styles.css?v=course-colors" />
+    <style>
+      .course-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        margin-bottom: 40px;
+        padding: 30px;
+        background-color: #f9f9f9;
+        border-radius: 12px;
+      }
+
+      .course-icon {
+        width: 100px;
+        height: 100px;
+        background-color: #001f3f;
+        border-radius: 12px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .course-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .course-info {
+        flex: 1;
+      }
+
+      .course-name-header {
+        font-size: 32px;
+        font-weight: 700;
+        color: #001f3f;
+        margin-bottom: 10px;
+      }
+
+      .teacher-label {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .details-section {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .detail-oval {
+        background-color: white;
+        border: 2px solid #001f3f;
+        color: #001f3f;
+        padding: 15px 25px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+        min-width: 180px;
+        flex: 1;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media (max-width: 768px) {
+        .course-header {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .course-name-header {
+          font-size: 24px;
+        }
+
+        .detail-oval {
+          min-width: 150px;
+        }
+      }
+    </style>
   </head>
   <body class="course-page applied-math-page">
     <header class="site-header">
@@ -21,7 +106,7 @@
               <a class="dropdown-item" href="computer-science.html">Computer Science</a>
             </div>
           </div>
-          <a class="nav-button nav-button--join" href="https://docs.google.com/forms/d/e/1FAIpQLSd5ZVvXKnXLlXVtzR3XfWHW_usxL_PZmFZ52zbIr6Bpo9z_eg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Apply</a>
+          <a class="nav-button nav-button--join" href="https://docs.google.com/forms/d/e/1FAIpQLSd5ZVvXKnXLlXVtzR3XfWHW_usxL_PZmFZ52zbIr6Bpo9z_eg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Join</a>
           <a class="nav-button" href="about.html">About us</a>
           <a class="nav-button nav-button--donate" href="https://hcb.hackclub.com/donations/start/systemplayground" target="_blank" rel="noopener noreferrer">Donate</a>
         </div>
@@ -31,6 +116,24 @@
     <main class="main">
       <article class="course-detail">
         <h1 class="course-page-title">Probability</h1>
+        
+        <!-- Learn More Section -->
+        <div class="course-header">
+          <div class="course-icon">
+            <img src="images/course-probability.jpeg" alt="Probability course icon" />
+          </div>
+          <div class="course-info">
+            <h2 class="course-name-header">Probability</h2>
+            <p class="teacher-label">Teacher: <strong>Eva Fridman</strong></p>
+            
+            <div class="details-section">
+              <div class="detail-oval">Days met: 2</div>
+              <div class="detail-oval">Time met: Coming soon!</div>
+              <div class="detail-oval">Course length: Fall semester</div>
+            </div>
+          </div>
+        </div>
+
         <img class="course-detail-image" src="images/course-probability.jpeg" alt="Probability course image" />
         <p class="course-detail-copy">
           Probability helps students understand randomness, risk, prediction, and decision-making. This course connects
