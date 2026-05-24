@@ -8,7 +8,8 @@
     <style>
       .course-header {
         display: flex;
-        align-items: flex-start;
+        flex-direction: column;
+        align-items: center;
         gap: 30px;
         margin-bottom: 40px;
         padding: 0;
@@ -17,16 +18,7 @@
       }
 
       .course-icon {
-        width: 100px;
-        height: 100px;
-        background-color: #001f3f;
-        border-radius: 12px;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        margin-left: -20px;
+        display: none;
       }
 
       .course-icon img {
@@ -38,6 +30,8 @@
       .course-info {
         flex: 1;
         padding-top: 0;
+        width: 100%;
+        text-align: center;
       }
 
       .course-name-header {
@@ -56,6 +50,7 @@
         gap: 15px;
         flex-wrap: nowrap;
         align-items: center;
+        justify-content: center;
       }
 
       .detail-oval {
@@ -77,21 +72,48 @@
       }
 
       .course-detail-image {
-        display: none;
+        display: block;
+        max-width: 300px;
+        margin: 40px auto 0;
       }
 
       .course-detail-copy {
-        display: none;
+        display: block;
+        max-width: 400px;
+        margin: 20px auto 0;
+        text-align: left;
+        font-size: 16px;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .content-with-image {
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 40px;
+        flex-wrap: wrap;
+      }
+
+      .image-container {
+        flex: 0 1 300px;
+      }
+
+      .description-container {
+        flex: 0 1 400px;
+        display: flex;
+        align-items: center;
       }
 
       .course-detail-actions {
-        margin-top: 20px;
+        margin-top: 40px;
+        text-align: center;
       }
 
       @media (max-width: 768px) {
         .course-header {
-          flex-direction: column;
-          align-items: flex-start;
+          align-items: center;
         }
 
         .course-icon {
@@ -104,6 +126,15 @@
 
         .detail-oval {
           white-space: normal;
+        }
+
+        .content-with-image {
+          flex-direction: column;
+        }
+
+        .image-container,
+        .description-container {
+          flex: 1 1 100%;
         }
       }
     </style>
@@ -123,7 +154,7 @@
               <a class="dropdown-item" href="computer-science.html">Computer Science</a>
             </div>
           </div>
-          <a class="nav-button nav-button--join" href="https://docs.google.com/forms/d/e/1FAIpQLSd5ZVvXKnXLlXVtzR3XfWHW_usxL_PZmFZ52zbIr6Bpo9z_eg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Join</a>
+          <a class="nav-button nav-button--apply" href="https://docs.google.com/forms/d/e/1FAIpQLSd5ZVvXKnXLlXVtzR3XfWHW_usxL_PZmFZ52zbIr6Bpo9z_eg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Apply</a>
           <a class="nav-button" href="about.html">About us</a>
           <a class="nav-button nav-button--donate" href="https://hcb.hackclub.com/donations/start/systemplayground" target="_blank" rel="noopener noreferrer">Donate</a>
         </div>
@@ -137,15 +168,22 @@
         
         <!-- Learn More Section -->
         <div class="course-header">
-          <div class="course-icon">
-            <img src="images/course-probability.jpeg" alt="Probability course icon" />
-          </div>
           <div class="course-info">
             <div class="details-section">
               <div class="detail-oval">Days met: 2</div>
               <div class="detail-oval">Time met: Coming soon!</div>
               <div class="detail-oval">Course length: Fall semester</div>
             </div>
+          </div>
+        </div>
+
+        <!-- Image and Description Section -->
+        <div class="content-with-image">
+          <div class="image-container">
+            <img class="course-detail-image" src="images/course-probability.jpeg" alt="Probability course image" />
+          </div>
+          <div class="description-container">
+            <p class="course-detail-copy">Introduction to Combinatorics, conditional probability including Bayes' Theorem, the law of total probability, and expected value.</p>
           </div>
         </div>
 
