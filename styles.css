@@ -148,10 +148,10 @@ body {
   text-decoration: underline;
 }
 
-.nav-button:not(.nav-button--donate):not(.nav-button--join):hover,
-.nav-button:not(.nav-button--donate):not(.nav-button--join):focus-visible,
-.dropdown:hover > .nav-button:not(.nav-button--donate):not(.nav-button--join),
-.dropdown:focus-within > .nav-button:not(.nav-button--donate):not(.nav-button--join) {
+.nav-button:not(.nav-button--donate):not(.nav-button--join):not(.nav-button--apply):hover,
+.nav-button:not(.nav-button--donate):not(.nav-button--join):not(.nav-button--apply):focus-visible,
+.dropdown:hover > .nav-button:not(.nav-button--donate):not(.nav-button--join):not(.nav-button--apply),
+.dropdown:focus-within > .nav-button:not(.nav-button--donate):not(.nav-button--join):not(.nav-button--apply) {
   background: var(--navy-strong);
 }
 
