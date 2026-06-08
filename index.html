@@ -59,6 +59,21 @@
         </div>
       </section>
 
+      <section class="gallery-band" aria-label="Photo gallery">
+        <div class="photo-gallery" data-gallery>
+          <div class="gallery-frame">
+            <img class="gallery-image is-active" src="images/photogallery1.png" alt="sySTEM Playground class photo 1" />
+            <img class="gallery-image" src="images/photogallery2.png" alt="sySTEM Playground class photo 2" />
+            <button class="gallery-arrow gallery-arrow--prev" type="button" aria-label="Previous photo" data-gallery-prev>&lsaquo;</button>
+            <button class="gallery-arrow gallery-arrow--next" type="button" aria-label="Next photo" data-gallery-next>&rsaquo;</button>
+          </div>
+          <div class="gallery-dots" aria-label="Gallery position">
+            <button class="gallery-dot is-active" type="button" aria-label="Show photo 1" data-gallery-dot="0"></button>
+            <button class="gallery-dot" type="button" aria-label="Show photo 2" data-gallery-dot="1"></button>
+          </div>
+        </div>
+      </section>
+
       <section class="faq-band" aria-label="Questions and answers">
         <div class="faq-shell">
             <h2>Q&amp;A</h2>
@@ -102,5 +117,35 @@
         background: #d94251;
       }
     </style>
+    <script>
+      const gallery = document.querySelector("[data-gallery]");
+
+      if (gallery) {
+        const images = Array.from(gallery.querySelectorAll(".gallery-image"));
+        const dots = Array.from(gallery.querySelectorAll(".gallery-dot"));
+        const previousButton = gallery.querySelector("[data-gallery-prev]");
+        const nextButton = gallery.querySelector("[data-gallery-next]");
+        let activeIndex = 0;
+
+        function showGalleryImage(index) {
+          activeIndex = (index + images.length) % images.length;
+
+          images.forEach((image, imageIndex) => {
+            image.classList.toggle("is-active", imageIndex === activeIndex);
+          });
+
+          dots.forEach((dot, dotIndex) => {
+            dot.classList.toggle("is-active", dotIndex === activeIndex);
+          });
+        }
+
+        previousButton.addEventListener("click", () => showGalleryImage(activeIndex - 1));
+        nextButton.addEventListener("click", () => showGalleryImage(activeIndex + 1));
+
+        dots.forEach((dot, dotIndex) => {
+          dot.addEventListener("click", () => showGalleryImage(dotIndex));
+        });
+      }
+    </script>
   </body>
 </html>
