@@ -234,6 +234,27 @@ body {
   font-size: clamp(1rem, 2.2vw, 1.28rem);
 }
 
+.hero-enroll-button {
+  display: inline-block;
+  margin-top: 1.6rem;
+  padding: 0.7rem 1.5rem;
+  border: 0;
+  border-radius: 999px;
+  background: #4cc9a4;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-enroll-button:hover,
+.hero-enroll-button:focus-visible {
+  background: #39b794;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
 .feature-band {
   margin-top: 0;
   color: #f8fbff;
@@ -302,6 +323,79 @@ body {
   margin: 0;
   color: rgba(255, 255, 255, 0.92);
   line-height: 1.65;
+}
+
+.updates-band {
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  padding: clamp(3.5rem, 8vw, 6rem) 1.2rem;
+}
+
+.updates-content {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+}
+
+.updates-content h2 {
+  margin: 0 0 clamp(2rem, 5vw, 3.5rem);
+  color: var(--navy);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  text-align: center;
+}
+
+.updates-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
+}
+
+.updates-image {
+  width: 100%;
+  max-height: 520px;
+  display: block;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(16, 42, 67, 0.16);
+}
+
+.updates-copy h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(1.6rem, 3.3vw, 2.4rem);
+  line-height: 1.2;
+}
+
+.updates-coral {
+  color: #fe585a;
+}
+
+.updates-copy p {
+  margin: 1.25rem 0 1.75rem;
+  color: #415562;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.updates-button {
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  border-radius: 999px;
+  background: var(--navy);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.updates-button:hover,
+.updates-button:focus-visible {
+  background: var(--navy-strong);
+  transform: translateY(-1px);
 }
 
 .gallery-band {
@@ -1035,6 +1129,24 @@ body {
 
   .feature-card p {
     line-height: 1.55;
+  }
+
+  .updates-band {
+    min-height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .updates-content h2 {
+    margin-bottom: 2rem;
+  }
+
+  .updates-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .updates-image {
+    max-height: 420px;
   }
 
   .gallery-band {
