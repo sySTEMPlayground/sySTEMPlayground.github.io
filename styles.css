@@ -327,10 +327,18 @@ body {
 
 .updates-band {
   min-height: 100vh;
-  background: var(--bg);
+  background: #dcebed;
   display: flex;
   align-items: center;
   padding: clamp(3.5rem, 8vw, 6rem) 1.2rem;
+}
+
+.updates-band--about {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: 3rem;
+  align-items: flex-start;
+  padding-top: clamp(2.5rem, 5vw, 4rem);
 }
 
 .updates-content {
