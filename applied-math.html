@@ -6,7 +6,8 @@
     <title>Applied Math</title>
     <meta name="application-name" content="SySTEM Playground" />
     <link rel="icon" type="image/png" href="images/logo.png" />
-    <link rel="stylesheet" href="styles.css?v=course-detail-layout" />
+    <link rel="stylesheet" href="styles.css?v=course-running-status-v1" />
+    <script src="course-status.js" defer></script>
     <style>
       .nav-button--apply {
         background: #e75260;
@@ -46,6 +47,28 @@
 
       <section class="course-list" aria-label="Applied Math courses">
         <article class="course-row">
+          <img class="course-image" src="images/course-statistics.jpeg" alt="Statistics course image" />
+          <div class="course-copy">
+            <h2>Statistics</h2>
+            <p class="course-semester">Semester 2</p>
+            <p>
+              Build skills in reading and interpreting data, testing claims, and making stronger decisions using
+              statistical reasoning.
+            </p>
+            <div class="course-actions">
+              <a
+                class="enroll-button"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScTeX3lxlH5HZyxFAChAcFfaxlbk_2HNuSK3nsHtZqFhIsrDw/viewform?usp=preview"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Enroll</a
+              >
+              <a class="learn-more-button" href="statistics.html">Learn More</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-row" data-currently-running>
           <img class="course-image" src="images/course-probability.jpeg" alt="Probability course image" />
           <div class="course-copy">
             <h2>Probability</h2>
@@ -67,7 +90,7 @@
           </div>
         </article>
 
-        <article class="course-row">
+        <article class="course-row" data-currently-running>
           <img class="course-image" src="images/course-econ.jpeg" alt="Economics course image" />
           <div class="course-copy">
             <h2>Economics</h2>
@@ -84,28 +107,6 @@
                 >Enroll</a
               >
               <a class="learn-more-button" href="economics.html">Learn More</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="course-row">
-          <img class="course-image" src="images/course-statistics.jpeg" alt="Statistics course image" />
-          <div class="course-copy">
-            <h2>Statistics</h2>
-            <p class="course-semester">Semester 2</p>
-            <p>
-              Build skills in reading and interpreting data, testing claims, and making stronger decisions using
-              statistical reasoning.
-            </p>
-            <div class="course-actions">
-              <a
-                class="enroll-button"
-                href="https://docs.google.com/forms/d/e/1FAIpQLScTeX3lxlH5HZyxFAChAcFfaxlbk_2HNuSK3nsHtZqFhIsrDw/viewform?usp=preview"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Enroll</a
-              >
-              <a class="learn-more-button" href="statistics.html">Learn More</a>
             </div>
           </div>
         </article>

@@ -6,7 +6,8 @@
     <title>Computer Science</title>
     <meta name="application-name" content="SySTEM Playground" />
     <link rel="icon" type="image/png" href="images/logo.png" />
-    <link rel="stylesheet" href="styles.css?v=course-detail-layout" />
+    <link rel="stylesheet" href="styles.css?v=course-running-status-v1" />
+    <script src="course-status.js" defer></script>
     <style>
       .nav-button--apply {
         background: #e75260;
@@ -43,14 +44,13 @@
 
     <main class="main">
       <h1 class="course-page-title">Computer Science</h1>
-      <p class="course-page-subtitle">Explore how algorithms, data, and logic power the systems we use every day.</p>
 
       <section class="course-list" aria-label="Computer Science courses">
         <article class="course-row">
           <img class="course-image" src="images/course-oop.jpeg" alt="Algorithms course image" />
           <div class="course-copy">
             <h2>Object Oriented Programming</h2>
-            <p class="course-semester">Semester 1</p>
+            <p class="course-semester">Spring semester</p>
             <p>
               Learn how to design step-by-step solutions, measure efficiency, and reason about why programs work.
             </p>
@@ -63,6 +63,28 @@
                 >Enroll</a
               >
               <a class="learn-more-button" href="object-oriented-programming.html">Learn More</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-row" data-currently-running>
+          <img class="course-image" src="images/course-oop.jpeg" alt="Introduction to CS course image" />
+          <div class="course-copy">
+            <h2>Introduction to CS</h2>
+            <p class="course-semester">Fall semester</p>
+            <p>
+              Explore the foundations of computer science through problem-solving, programming, and computational
+              thinking.
+            </p>
+            <div class="course-actions">
+              <a
+                class="enroll-button"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScTeX3lxlH5HZyxFAChAcFfaxlbk_2HNuSK3nsHtZqFhIsrDw/viewform?usp=preview"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Enroll</a
+              >
+              <a class="learn-more-button" href="introduction-to-cs.html">Learn More</a>
             </div>
           </div>
         </article>

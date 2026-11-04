@@ -6,7 +6,8 @@
     <title>Natural Sciences</title>
     <meta name="application-name" content="SySTEM Playground" />
     <link rel="icon" type="image/png" href="images/logo.png" />
-    <link rel="stylesheet" href="styles.css?v=course-detail-layout" />
+    <link rel="stylesheet" href="styles.css?v=course-running-status-v1" />
+    <script src="course-status.js" defer></script>
     <style>
       .nav-button--apply {
         background: #e75260;
@@ -45,7 +46,7 @@
       <h1 class="course-page-title">Natural Sciences</h1>
 
       <section class="course-list" aria-label="Natural Sciences courses">
-        <article class="course-row">
+        <article class="course-row" data-currently-running>
           <img class="course-image" src="images/course-chemistry.jpeg" alt="Chemistry course image" />
           <div class="course-copy">
             <h2>Chemistry</h2>

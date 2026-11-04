@@ -675,6 +675,7 @@ body {
 }
 
 .course-row {
+  position: relative;
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 1.1rem;
@@ -700,6 +701,25 @@ body {
 
 .course-copy {
   min-width: 0;
+}
+
+.course-row--running .course-copy {
+  background: #edf0f2;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.course-running-badge {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  z-index: 1;
+  border-radius: 999px;
+  background: #314c6b;
+  color: #fff;
+  padding: 0.58rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 400;
 }
 
 .course-copy p {
